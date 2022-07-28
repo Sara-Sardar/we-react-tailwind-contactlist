@@ -1,4 +1,4 @@
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const links =[
     {name: 'Home', url: '/home'},
@@ -19,7 +19,7 @@ export default function NavigationBar() {
            {links.map((link)=>{
               return(
           <li className="text-xl mx-2 font-semibold  hover:underline rounded-md  py-2">
-                <link to={link.url}>{link.name}</link>
+                <Link to={link.url}>{link.name}</Link>
               </li>
               );
            })}
