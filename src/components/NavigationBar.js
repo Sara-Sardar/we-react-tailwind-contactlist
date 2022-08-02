@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const links =[
-    {name: 'Home', url: '/home'},
+    {name: 'Home', url: '/'},
     {name: 'Find Talents', url: '/findtalents'},   
     {name: 'Find Jobs', url: '/findjobs'},
     {name: 'Post Jobs', url: '/PostJobs'},    
@@ -13,7 +13,7 @@ export default function NavigationBar() {
     <nav className="fixed-top text-amber-400 shadow-sm  flex justify-between items-center w-screen">
        
        <div className="flex "> 
-       <a href="home" className="text-2xl mx-2 p-6 font-bold hover:underline ">KURDLANCER</a>
+       <a href="/" className="text-2xl mx-2 p-6 font-bold hover:underline ">KURDLANCER</a>
                 
         <ul className="flex  py-4 ">
            {links.map((link)=>{

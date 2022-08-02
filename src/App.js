@@ -6,11 +6,14 @@ import FindTalents from './pages/FindTalents';
 import FindJobs from './pages/FindJobs';
 import PostJobs from './pages/PostJobs';
 import Footer from './components/Footer';
+import Profile from './pages/Profile';
+
 
 function App() {
   return (
     <div>
-      
+       
+       <Profile/>
           <NavigationBar />
           
             <Routes>
