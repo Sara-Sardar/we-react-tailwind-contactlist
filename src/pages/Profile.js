@@ -9,6 +9,7 @@ import FreelancerImage from '../components/FreelancerImage';
 export default function Profile() {
     
             const [user,setUser] = useState({});
+
             useEffect(()=>{
                 //get request to the API endpoint
                 axios
@@ -71,8 +72,8 @@ export default function Profile() {
 
         
             <div>
-               <FreelancerProfile user={user}/>
-            </div>
+              {user && <FreelancerProfile user={user}/>} 
+            </div>;
 
 
 
