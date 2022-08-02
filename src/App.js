@@ -14,7 +14,8 @@ function App() {
     <div>
        
        <Profile/>
-          <NavigationBar />
+
+{/*          <NavigationBar /> 
           
             <Routes>
               <Route path="/" element={<Home />} />
@@ -26,7 +27,7 @@ function App() {
 
 
             <Footer/>
-
+*/}
             
     </div>
   );
